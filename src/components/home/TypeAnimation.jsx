@@ -6,10 +6,10 @@ const TypeAnimation = () => {
     <Typewriter
       options={{
         strings: [
-          "Software Engineer",
-          "Full Stack Developer",
-          "DSA Enthusiast",
-          "Curious Learner",
+          "Serial Creator",
+          "Software & Tech Enthusiast",
+          "History Buff",
+          "World Travler",
         ],
         autoStart: true,
         loop: true,

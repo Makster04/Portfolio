@@ -20,6 +20,7 @@ const HomePage = () => {
             </h1>
             <h1
               style={{
+                color: "#0E2BBA",
                 fontFamily: "Fira Code",
                 fontSize: "2.5rem",
                 position: "static",
@@ -28,12 +29,12 @@ const HomePage = () => {
               I'M{" "}
               <span
                 style={{
-                  color: "#32CD30",
+                  color: "#0E2BBA",
                   position: "static",
                   textDecoration: "",
                 }}
               >
-                ABHINAV KUMAR
+                MAK TRNKA
               </span>
             </h1>
           </div>

@@ -120,7 +120,7 @@ const Header = () => {
               textDecoration: "none",
             }}
           >
-            Abhinav Kumar
+            Mak Trnka
           </Typography>
           <Box
             justifyContent="flex-end"

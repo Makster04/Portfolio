@@ -75,7 +75,7 @@ const AboutInfo = () => {
       <div className="github-graph">
         <GitHubCalendar
           style={{ marginBottom: "50px" }}
-          username="Abhinav2011"
+          username="Makster04"
           blockMargin={6}
           blockSize={12}
           fontSize={16}

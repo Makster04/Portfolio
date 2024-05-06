@@ -13,15 +13,15 @@ const Contact = () => {
   // const contactLinks = [
   //   {
   //     site : "Linkedin",
-  //     link : "https://www.linkedin.com/in/abhinav-kumar-904254195/",
+  //     link : "https://www.linkedin.com/in/mak-trnka/",
   //   },
   //   {
   //     site : "Github",
-  //     link : "https://github.com/Abhinav2011",
+  //     link : "https://github.com/Makster04",
   //   },
   //   {
-  //     site : "Twitter",
-  //     link : "https://twitter.com/Abhinav36650041",
+  //     site : "Instagram",
+  //     link : "https://www.instagram.com/mt_b0sniak/",
   //   },
   // ]
   
@@ -46,7 +46,7 @@ const Contact = () => {
             <nav aria-label="main mailbox folders">
               <List>
                 <ListItem disablePadding  className="contact-list-item">
-                  <ListItemButton  href="https://www.linkedin.com/in/abhinav-kumar-904254195/" target="_blank">
+                  <ListItemButton  href="https://www.linkedin.com/in/mak-trnka/" target="_blank">
                     <ListItemIcon>
                       <BsLinkedin className="contact-icon" />
                     </ListItemIcon>
@@ -54,7 +54,7 @@ const Contact = () => {
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding className="contact-list-item">
-                  <ListItemButton href="https://github.com/Abhinav2011" target="_blank">
+                  <ListItemButton href="https://github.com/Makster04" target="_blank">
                     <ListItemIcon>
                       <BsGithub className="contact-icon" />
                     </ListItemIcon>
@@ -62,7 +62,7 @@ const Contact = () => {
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding className="contact-list-item">
-                  <ListItemButton href="https://twitter.com/Abhinav36650041" target="_blank">
+                  <ListItemButton href="https://www.instagram.com/mt_b0sniak/" target="_blank">
                     <ListItemIcon>
                       <BsTwitter className="contact-icon" />
                     </ListItemIcon>
@@ -72,14 +72,14 @@ const Contact = () => {
                 <ListItem disablePadding className="contact-list-item">
                   <ListItemButton
                     onClick={() =>
-                      (window.location = "mailto:abhi32eee@gmail.com")
+                      (window.location = "mailto:maktrnka@gmail.com")
                     }
                   >
                     <ListItemIcon>
                       <HiMailOpen className="contact-icon" />
                     </ListItemIcon>
                     <ListItemText
-                      primary="Mail (abhi32eee@gmail.com)"
+                      primary="Mail (maktrnka@comcast.net)"
                       className="contact-text"
                     />
                   </ListItemButton>
