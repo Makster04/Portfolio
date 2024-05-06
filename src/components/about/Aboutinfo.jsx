@@ -15,18 +15,18 @@ const AboutInfo = () => {
           fontWeight: "bold",
         }}
       >
-        <span style={{ color: "#32CD30" }}>ABOUT</span> Me
+        <span style={{ color: "#32CD30" }}>ABOUT</span> ME
       </h1>
       <div className="about-parent">
         <div className="about-text">
           <p style={{ textAlign: "justify" }}>
             Hello Fellow Comrades, I am{" "}
-            <span style={{ color: "black", fontWeight: "bold" }}>
+            <span style={{ color: "green", fontWeight: "bold" }}>
               Mak Trnka
             </span>{" "}
             I live in the United States and am a Bosnian Descendent, Second Generation. I went to college at
             {" "}
-            <span style={{ color: "PURPLE", fontWeight: "bold" }}>
+            <span style={{ color: "pink", fontWeight: "bold" }}>
               UNIVERSITY OF WASHINGTON, 2019-2022
             </span>{" "}
             and currently I'm learning Software Engineering at{" "}
@@ -42,7 +42,7 @@ const AboutInfo = () => {
             <ul>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                Watching Basketball
+                Creating
               </li>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
