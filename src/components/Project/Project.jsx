@@ -18,11 +18,12 @@ const Project = () => {
           marginTop: "3rem",
           fontFamily: "Fira Code",
           fontWeight: "bold",
+          color: "black"
         }}
       >
         My Recent <span style={{ color: "#32CD30" }}>Projects</span>
       </h1>
-      <p>These are some of the projects that I have been working on my own time!!</p>
+      <p>Projects I have worked on with groups in my Software Bootcamp!!!</p>
       <div className="project-cards">
         <Card.Group itemsPerRow={width > 786 ? 3 : 1}>
           {projectData.map((data, index) => {

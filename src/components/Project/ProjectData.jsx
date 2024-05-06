@@ -1,46 +1,25 @@
-import leetcodeNotifier from "../../assets/leetcode.svg";
 import transferMusic from "../../assets/transferMusic.svg";
-import ecommerce from "../../assets/ecommerce.svg";
 import group from "../../assets/group.svg";
-import voting from "../../assets/voting.svg";
 import phishing from "../../assets/phishing.svg";
 
 const projectData = [
     {
-        title : "Transfer Music",
-        description : "Web app which helps transfers your entire playlists from Youtube Music to Spotify.",
-        image : transferMusic,
-        projectLink : "https://github.com/Abhinav2011/Transfer-Music",
-    },
-    {
-        title : "Blockchain crowdfunding platform",
-        description : "Crowdfunding platform built on the Ethereum network. Decentralized system to raise funds for a campaign. Used NextJS for frontend and Solidity for backend.",
-        image : group,
-        projectLink : "https://github.com/Abhinav2011/crowdfund",
-    },
-    {
-        title : "Leetcode Bookmark",
-        description : "Chrome extension which saves leetcode articles for future reference.",
+        title : "Code Voyage",
+        description : "A demo app that simplifies the process of budgeting for travel by giving out comprehensive budget plans for specified locations (ROLE: Worked on the Backend programming, collecting data relating to a Travel API, creating routes, models, controllers, & tests)",
         image : phishing,
-        projectLink : "https://github.com/Abhinav2011/leetcode-bookmark",
+        projectLink : "https://github.com/Code-Voyage-CF/code-voyage",
     },
     {
-        title : "Blockchain voting platform",
-        description : "A complete decentralized voting system built on the Ethereum network. Elections can be started on the platform and users can vote for candidates. Admin has the ability to check all elections and manage them.",
-        image : voting,
-        projectLink : "https://github.com/UIpyo",
+        title : "Khronicles",
+        description : "A gaming demo website where you play a game similar to Dungeons & Dragons (ROLE: Worked on the Frontend, collecting assits & doing majority of the stying using CSS)",
+        image : group,
+        projectLink : " https://github.com/BitCrafters-CF/khronicles",
     },
     {
-        title : "LeetCode Notifier",
-        description : "A discord bot which helps you in your leetcode journey. Built using NodeJs and DiscordJs.",
-        image : leetcodeNotifier,
-        projectLink : "https://github.com/Abhinav2011/Leetcode-notifier",
-    },
-    {
-        title : "E-commerce-API",
-        description : "E-commerce API made using NodeJS, express and MongoDB. Used JWT for user authentication.",
-        image : ecommerce,
-        projectLink : "https://github.com/Abhinav2011/E-commerce-API",
+        title : "Chroma",
+        description : "A health website where you can access information, assistance, and tools relating to Synesthesia (ROLE: Worked on the Frontend working on all the animation, styles, & edits of every page and wireframe, using Bootstrap React & CSS)",
+        image : transferMusic,
+        projectLink : "https://github.com/Chroma-Quest",
     },
   
     
