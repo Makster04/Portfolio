@@ -5,15 +5,15 @@ import Header from "./components/header/Header";
 import HomePage from "./components/home/HomePage";
 import Contact from "./components/contact/Contact";
 import Project from "./components/project/Project";
-import About from "./components/about/AboutInfo";
-import Footer from "./components/footer/Footer";
+import About from "./components/about/Aboutinfo";
+import Footer from "./components/footer/footer";
 import ParticleBackground from "./components/background/ParticleBackground";
 
 const App = () => {
   return (
     <div className="App">
       <ParticleBackground className="particle"></ParticleBackground>
-      <div className="AppCosntent">
+      <div className="AppContent">
         <Router>
           <Header />
           <Routes>
