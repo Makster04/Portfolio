@@ -15,23 +15,23 @@ const AboutInfo = () => {
           fontWeight: "bold",
         }}
       >
-        <span style={{ color: "#32CD30" }}>About</span> Me
+        <span style={{ color: "#32CD30" }}>ABOUT</span> Me
       </h1>
       <div className="about-parent">
         <div className="about-text">
           <p style={{ textAlign: "justify" }}>
-            Hi people, I am{" "}
-            <span style={{ color: "#32CD30", fontWeight: "bold" }}>
+            Hello Fellow Comrades, I am{" "}
+            <span style={{ color: "black", fontWeight: "bold" }}>
               Mak Trnka
             </span>{" "}
-            I live in the United States and am a Bosnian Descendent ,Second Generation . I did my Software Bootcamp
-            from{" "}
-            <span style={{ color: "#32CD30", fontWeight: "bold" }}>
-              VIT Vellore
+            I live in the United States and am a Bosnian Descendent, Second Generation. I went to college at
+            {" "}
+            <span style={{ color: "PURPLE", fontWeight: "bold" }}>
+              UNIVERSITY OF WASHINGTON, 2019-2022
             </span>{" "}
-            and currently I'm interning at{" "}
-            <span style={{ color: "#32CD30", fontWeight: "bold" }}>
-              JP Morgan Chase & Co
+            and currently I'm learning Software Engineering at{" "}
+            <span style={{ color: "RED", fontWeight: "bold" }}>
+              CODE FELLOWS
             </span>
             .
           </p>
@@ -42,15 +42,15 @@ const AboutInfo = () => {
             <ul>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                Watching Table Tennis
+                Watching Basketball
               </li>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                Gardening
+                Traveling
               </li>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                Travelling
+                Talking
               </li>
             </ul>
           </p>

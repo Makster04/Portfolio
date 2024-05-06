@@ -17,23 +17,22 @@ const HomeBottomPage = () => {
         <div className="intro-text">
           <p>
             I am Mak Trnka, currently studying at{" "}
-            <span style={{ color: "#0E2BBA" }}>CODE FELLOWS</span> as a
-            Software Engineer
+            <span style={{ color: "#32CD30" }}>CODE FELLOWS</span> for
+            Software Development.
           </p>
           <br />
           <p>
-            I love working as a <span style={{ color: "#0E2BBA" }}>Full Stack Developer</span> and My tech stack includes
-            NodeJs, SpringBoot, React, TypeScript. I am also familar with AWS and
-            Docker.
+            I have huge passion in <span style={{ color: "#32CD30" }}>Tech & Creatitviy</span> and my top tech skills currently include
+            using Javascript, CSS, React, & the MERN stack. I am starting to go further learning AWS and TypeScript now. Later I want to learn Data Science.
           </p>
           <br />
           <p>
-            I am also proficient in C++, Java and love <span style={{ color: "#32CD30" }}>solving problems</span> involving data structures and algorithms.
+            I am also a huge <span style={{ color: "#32CD30" }}>Travel Buff</span>, traveled to 25 countries so far. In addition, I am a nerd about history, pop culture, movies, NBA, politics, cultures, & society. I wish to start a podcast at some point.
           </p>
           <br />
           <p>
-            I love making side projects and learn about new{" "}
-            <span style={{ color: "#32CD30" }}>technologies</span>.
+            I have huge talent in creating ideas, creating word excel graphs, and word powerpoints just for fun.{" "}
+            <span style={{ color: "#32CD30" }}>SERIAL CREATOR</span>.
           </p>
           <br />
           <p>

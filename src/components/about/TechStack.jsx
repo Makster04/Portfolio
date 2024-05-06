@@ -1,23 +1,24 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Card } from "semantic-ui-react";
 import {
-  DiJava,
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-} from "react-icons/di";
-import { CgCPlusPlus } from "react-icons/cg";
-import { SiMysql } from "react-icons/si";
-import { FaAws, FaDocker } from "react-icons/fa";
-import {SiSpringboot} from "react-icons/si";
+  SiJavascript,
+  SiCss3,
+  SiHtml5,
+  SiMongodb,
+  SiExpress,
+  SiReact,
+  SiNodedotjs,
+  SiTypescript,
+  SiMysql,
+  SiGit,
+} from "react-icons/si";
 
 const TechStack = () => {
-  const [width,setWidth] = useState(1200);
+  const [width, setWidth] = useState(1200);
 
   useEffect(() => {
     setWidth(window.innerWidth);
-  },[]);
+  }, []);
 
   return (
     <div className="techstack">
@@ -31,45 +32,57 @@ const TechStack = () => {
             fontWeight: "bold",
           }}
         >
-          SkillSet
+          Set of Tech Skills
         </span>
       </h1>
       <div className="techstack-row">
         <Card.Group itemsPerRow={width > 768 ? 5 : 2}>
           <Card raised className="item">
             {" "}
-            <CgCPlusPlus
-              style={{ width: "100%", height: "auto", color: "black" }}
-            />{" "}
-          </Card>
-          <Card raised className="item">
-            {" "}
-            <DiJava
-              style={{ width: "100%", height: "auto", color: "red" }}
-            />{" "}
-          </Card>
-          <Card raised className="item">
-            {" "}
-            <DiJavascript1
+            <SiJavascript
               style={{ width: "100%", height: "auto", color: "#FFC300" }}
             />{" "}
           </Card>
           <Card raised className="item">
             {" "}
-            <DiReact
+            <SiCss3
+              style={{ width: "100%", height: "auto", color: "#1572B6" }}
+            />{" "}
+          </Card>
+          <Card raised className="item">
+            {" "}
+            <SiHtml5
+              style={{ width: "100%", height: "auto", color: "#E34F26" }}
+            />{" "}
+          </Card>
+          <Card raised className="item">
+            {" "}
+            <SiMongodb
+              style={{ width: "100%", height: "auto", color: "#4DB33D"}}
+            />{" "}
+          </Card>
+          <Card raised className="item">
+            {" "}
+            <SiExpress
+              style={{ width: "100%", height: "auto", color: "#000000" }}
+            />{" "}
+          </Card>
+          <Card raised className="item">
+            {" "}
+            <SiReact
               style={{ width: "100%", height: "auto", color: "#61DBFB" }}
             />{" "}
           </Card>
           <Card raised className="item">
             {" "}
-            <DiNodejs
-              style={{ width: "100%", height: "auto", color: "green" }}
+            <SiNodedotjs
+            style={{ width: "100%", height: "auto", color: "#68A063" }}
             />{" "}
           </Card>
           <Card raised className="item">
             {" "}
-            <DiMongodb
-              style={{ width: "100%", height: "auto", color: "green" }}
+            <SiTypescript
+              style={{ width: "100%", height: "auto", color: "#007ACC" }}
             />{" "}
           </Card>
           <Card raised className="item">
@@ -80,20 +93,8 @@ const TechStack = () => {
           </Card>
           <Card raised className="item">
             {" "}
-            <SiSpringboot
-              style={{ width: "100%", height: "auto", color: "green" }}
-            />{" "}
-          </Card>
-          <Card raised className="item">
-            {" "}
-            <FaAws
-              style={{ width: "100%", height: "auto", color: "orange" }}
-            />{" "}
-          </Card>
-          <Card raised className="item">
-            {" "}
-            <FaDocker
-              style={{ width: "100%", height: "auto", color: "#0db7ed" }}
+            <SiGit
+              style={{ width: "100%", height: "auto", color: "#F05032" }}
             />{" "}
           </Card>
         </Card.Group>

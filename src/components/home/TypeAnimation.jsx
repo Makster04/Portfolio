@@ -7,13 +7,22 @@ const TypeAnimation = () => {
       options={{
         strings: [
           "Serial Creator",
-          "Software & Tech Enthusiast",
+          "Software Enthusiast",
+          "Data Enthusiast",
           "History Buff",
+          "Movie Buff",
+          "News Buff",
+          "(Geo)Political Buff",
+          "Society Buff",
+          "Pop Culture Buff",
           "World Travler",
+          "Social Mediator",
+          "Chatterbox",
+          "Goofball"
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 60,
+        deleteSpeed: 40,
       }}
     />
   );

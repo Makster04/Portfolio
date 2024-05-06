@@ -16,20 +16,21 @@ const HomePage = () => {
                 position: "static",
               }}
             >
-              HI
+              Greetings,
             </h1>
             <h1
               style={{
-                color: "#0E2BBA",
+                color: "white",
                 fontFamily: "Fira Code",
                 fontSize: "2.5rem",
                 position: "static",
               }}
             >
-              I'M{" "}
+              I'm{" "}
               <span
                 style={{
-                  color: "#0E2BBA",
+                  color: "Gold",
+                  fontFamily: "Fira Code",
                   position: "static",
                   textDecoration: "",
                 }}
