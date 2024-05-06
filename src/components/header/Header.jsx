@@ -22,7 +22,7 @@ const pages = [
   { text: "About", href: "/about" },
   { text: "Projects", href: "/projects" },
   { text: "Contact", href: "/contact" },
-  { text: "Fork Project", href: "https://github.com/Abhinav2011/my-portfolio" },
+  { text: "Fork Project", href: "https://github.com/Makster04/Mak-portfolio" },
 ];
 const pageIcons = [
   HomeRoundedIcon,
@@ -62,7 +62,7 @@ const Header = () => {
               textDecoration: "none",
             }}
           >
-            Abhinav Kumar
+            Mak Trnka
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
