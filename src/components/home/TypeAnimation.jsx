@@ -16,13 +16,19 @@ const TypeAnimation = () => {
           "Society Buff",
           "Pop Culture Buff",
           "World Travler",
-          "Social Mediator",
-          "Chatterbox",
-          "Goofball"
+          "Social Media",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 40,
+        deleteSpeed: 60,
+        delay: 50, // Adds delay between each character
+        pauseFor: 2000, // Pauses for 2 seconds after each string
+        cursor: "_", // Custom cursor
+        cursorStyle: "|", // Custom cursor style
+        cursorSpeed: 100, // Speed of cursor blinking
+        wrapperClassName: "type-animation-wrapper", // Custom wrapper class
+        cursorClassName: "type-animation-cursor", // Custom cursor class
+        onComplete: () => console.log("Animation completed"), // Callback function on animation completion
       }}
     />
   );

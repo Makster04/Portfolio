@@ -3,7 +3,7 @@
 import React from "react";
 import TypeAnimation from "./TypeAnimation";
 import HomeBottomPage from "./HomeBottomPage";
-import developer from "../../assets/developer.svg";
+import gifGif from "../../assets/giphy.gif"; // Importing Flag.gif
 
 // Component Definition
 
@@ -54,10 +54,11 @@ const HomePage = () => {
         
 
         <img
-          className="rounded w-36 h-36 homepage-avatar"
-          src={developer}
-          alt="Extra large avatar"
-        ></img>
+          className="rounded"
+          src={gifGif} //
+          alt="Avatar"
+          style={{ width: "300px", height: "300px", margin: "300px" }} // Adjusting width, height, and margin inline
+        />
       </div>
       
 
@@ -69,3 +70,5 @@ const HomePage = () => {
 // Export Component
 
 export default HomePage;
+
+

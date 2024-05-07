@@ -35,7 +35,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/mt_b0sniak/" className="mr-4 hover:underline md:mr-6">
+          <a href="https://www.twitter.com/mt_b0sniak/" className="mr-4 hover:underline md:mr-6">
             <SiLeetcode style={{ color: '#87CEEB', width: "200%", height: "auto" }} />
           </a>
         </li>
