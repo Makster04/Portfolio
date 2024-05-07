@@ -26,8 +26,6 @@ const TechStack = () => {
 
   return (
     <div className="techstack">
-      
-     
 
       <h1>
         My{" "}
@@ -42,13 +40,9 @@ const TechStack = () => {
           Set of Tech Skills
         </span>
       </h1>
-      
-   
 
       <div className="techstack-row">
         <Card.Group itemsPerRow={width > 768 ? 5 : 2}>
-          
-          
 
           <Card raised className="item">
             {" "}
@@ -56,8 +50,6 @@ const TechStack = () => {
               style={{ width: "100%", height: "auto", color: "#FFC300" }}
             />{" "}
           </Card>
-          
-         
 
           <Card raised className="item">
             {" "}
@@ -65,18 +57,14 @@ const TechStack = () => {
               style={{ width: "100%", height: "auto", color: "#1572B6" }}
             />{" "}
           </Card>
-          
-        
-
+               
           <Card raised className="item">
             {" "}
             <SiHtml5
               style={{ width: "100%", height: "auto", color: "#E34F26" }}
             />{" "}
-          </Card>
-          
-        
-
+          </Card>        
+       
           <Card raised className="item">
             {" "}
             <SiMongodb
@@ -84,8 +72,6 @@ const TechStack = () => {
             />{" "}
           </Card>
           
-        
-
           <Card raised className="item">
             {" "}
             <SiExpress
@@ -93,8 +79,6 @@ const TechStack = () => {
             />{" "}
           </Card>
           
-         
-
           <Card raised className="item">
             {" "}
             <SiReact
@@ -102,7 +86,6 @@ const TechStack = () => {
             />{" "}
           </Card>
           
-
           <Card raised className="item">
             {" "}
             <SiNodedotjs
@@ -110,8 +93,6 @@ const TechStack = () => {
             />{" "}
           </Card>
           
-          
-
           <Card raised className="item">
             {" "}
             <SiTypescript
@@ -119,7 +100,6 @@ const TechStack = () => {
             />{" "}
           </Card>
           
-
           <Card raised className="item">
             {" "}
             <SiMysql
@@ -127,8 +107,6 @@ const TechStack = () => {
             />{" "}
           </Card>
           
-
-
           <Card raised className="item">
             {" "}
             <SiGit
