@@ -1,13 +1,19 @@
+// Import Statements
+
 import React from "react";
 import TypeAnimation from "./TypeAnimation";
 import HomeBottomPage from "./HomeBottomPage";
 import developer from "../../assets/developer.svg";
+
+// Component Definition
 
 const HomePage = () => {
   return (
     <div className="home">
       <div className="home-parent">
         <div className="home-content">
+          
+
           <div className="heading-text">
             <h1
               style={{
@@ -39,19 +45,27 @@ const HomePage = () => {
               </span>
             </h1>
           </div>
+          
+
           <div className="text-animation">
             <TypeAnimation />
           </div>
         </div>
+        
+
         <img
           className="rounded w-36 h-36 homepage-avatar"
           src={developer}
           alt="Extra large avatar"
         ></img>
       </div>
+      
+
       <HomeBottomPage />
     </div>
   );
 };
+
+// Export Component
 
 export default HomePage;

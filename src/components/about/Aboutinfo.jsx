@@ -1,12 +1,19 @@
+// Import Statements
+
 import React from "react";
 import TechStack from "./TechStack";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import codeImage from "../../assets/coder.svg";
 import GitHubCalendar from "react-github-calendar";
 
+// Component Definition
+
 const AboutInfo = () => {
   return (
     <div className="about">
+      
+      
+
       <h1
         style={{
           marginTop: "3rem",
@@ -17,6 +24,9 @@ const AboutInfo = () => {
       >
         <span style={{ color: "#32CD30" }}>ABOUT</span> ME
       </h1>
+      
+      
+
       <div className="about-parent">
         <div className="about-text">
           <p style={{ textAlign: "justify" }}>
@@ -37,8 +47,11 @@ const AboutInfo = () => {
           </p>
           <br></br>
           <p style={{ textAlign: "justify" }}>
-            Apart from developement, some things I like are<br></br>
+            Apart from development, some things I like are<br></br>
             <br></br>
+            
+
+
             <ul>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
@@ -55,13 +68,22 @@ const AboutInfo = () => {
             </ul>
           </p>
         </div>
+        
+
+
         <img
           className="rounded about-image"
           src={codeImage}
           alt="Extra large avatar"
         ></img>
       </div>
+      
+
+
       <TechStack />
+      
+
+
       <h1
         style={{
           marginTop: "3rem",
@@ -85,5 +107,7 @@ const AboutInfo = () => {
     </div>
   );
 };
+
+// Export Component
 
 export default AboutInfo;

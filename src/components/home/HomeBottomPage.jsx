@@ -1,10 +1,16 @@
+// Import Statements
+
 import React from "react";
 import avatar from "../../assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import { FiDownloadCloud } from "react-icons/fi";
 import { Button } from "@mui/material";
 
+// Constant Declaration
+
 const resumeURL = "https://drive.google.com/file/d/1ahsxf-lCTFqqF5amadW83EXtsNSWt8G5/view?usp=sharing";
+
+// Component Definition
 
 const HomeBottomPage = () => {
 
@@ -13,6 +19,8 @@ const HomeBottomPage = () => {
       <h1 style={{ fontSize: "2.6rem", marginBottom: "3.5rem" }}>
         Some Things <span style={{ color: "Black" }}>About Me</span>
       </h1>
+
+
       <div className="introduction">
         <div className="intro-text">
           <p>
@@ -22,7 +30,7 @@ const HomeBottomPage = () => {
           </p>
           <br />
           <p>
-            I have huge passion in <span style={{ color: "#32CD30" }}>Tech & Creatitviy</span> and my top tech skills currently include
+            I have huge passion in <span style={{ color: "#32CD30" }}>Tech & Creativity</span> and my top tech skills currently include
             using Javascript, CSS, React, & the MERN stack. I am starting to go further learning AWS and TypeScript now. Later I want to learn Data Science.
           </p>
           <br />
@@ -39,6 +47,8 @@ const HomeBottomPage = () => {
             Checkout my <span style={{ color: "#32CD30" }}>resume</span> for more about me.{" "}
           </p>
         </div>
+        
+
         <div className="intro-image">
           <Tilt>
             <img
@@ -49,6 +59,9 @@ const HomeBottomPage = () => {
           </Tilt>
         </div>
       </div>
+      
+
+
       <div className="downloadPdf">
         <a
           href={resumeURL}
@@ -61,12 +74,13 @@ const HomeBottomPage = () => {
             endIcon={<FiDownloadCloud />}
             style={{ marginBottom: "50px" }}
           >
-            Resume
           </Button>
         </a>
       </div>
     </div>
   );
 };
+
+// Export Component
 
 export default HomeBottomPage;

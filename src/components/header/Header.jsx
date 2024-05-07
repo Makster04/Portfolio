@@ -1,3 +1,5 @@
+// Import Statements
+
 import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -17,6 +19,8 @@ import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CallRoundedIcon from "@mui/icons-material/CallRounded";
 import { BsGithub } from "react-icons/bs";
 
+// Data
+
 const pages = [
   { text: "Home", href: "/" },
   { text: "About", href: "/about" },
@@ -32,6 +36,8 @@ const pageIcons = [
   BsGithub,
 ];
 
+// Component Definition
+
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = useState(null);
 
@@ -46,7 +52,13 @@ const Header = () => {
     <AppBar position="sticky" sx={{ backgroundColor: "#152b61" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
+          
+          
+
           <BoltIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          
+
+
           <Typography
             variant="h6"
             noWrap
@@ -64,6 +76,8 @@ const Header = () => {
           >
             Mak Trnka
           </Typography>
+
+
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -103,7 +117,13 @@ const Header = () => {
               ))}
             </Menu>
           </Box>
+          
+
+
           <BoltIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          
+
+
           <Typography
             variant="h5"
             noWrap
@@ -122,6 +142,9 @@ const Header = () => {
           >
             Mak Trnka
           </Typography>
+          
+
+
           <Box
             justifyContent="flex-end"
             sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}
@@ -164,5 +187,7 @@ const Header = () => {
     </AppBar>
   );
 };
+
+// Export Component
 
 export default Header;
