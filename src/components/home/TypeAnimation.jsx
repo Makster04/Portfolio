@@ -23,7 +23,7 @@ const TypeAnimation = () => {
         deleteSpeed: 60,
         delay: 50, // Adds delay between each character
         pauseFor: 2000, // Pauses for 2 seconds after each string
-        cursor: "_", // Custom cursor
+        cursor: "|", // Custom cursor
         cursorStyle: "|", // Custom cursor style
         cursorSpeed: 100, // Speed of cursor blinking
         wrapperClassName: "type-animation-wrapper", // Custom wrapper class

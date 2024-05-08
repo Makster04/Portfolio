@@ -1,14 +1,15 @@
 // Import Statements
 
 import React from "react";
-import avatar from "../../assets/avatar.svg";
+import avatar from "../../assets/IdidThat.png";
 import Tilt from "react-parallax-tilt";
 import { FiDownloadCloud } from "react-icons/fi";
 import { Button } from "@mui/material";
+import Timeline from "./Timeline"; // Importing the Timeline component
 
 // Constant Declaration
 
-const resumeURL = "https://drive.google.com/file/d/1ahsxf-lCTFqqF5amadW83EXtsNSWt8G5/view?usp=sharing";
+const resumeURL = "https://docs.google.com/document/d/1GYLeAw0znx4qqupsi1OFI1ZxOTX4fKPxvYo0yQh3eOE/edit";
 
 // Component Definition
 
@@ -52,7 +53,7 @@ const HomeBottomPage = () => {
         <div className="intro-image">
           <Tilt>
             <img
-              class="rounded w-36 h-36"
+              class="rounded w-100 h-100"
               src={avatar}
               alt="Extra large avatar"
             ></img>
@@ -60,7 +61,6 @@ const HomeBottomPage = () => {
         </div>
       </div>
       
-
 
       <div className="downloadPdf">
         <a
@@ -74,9 +74,13 @@ const HomeBottomPage = () => {
             endIcon={<FiDownloadCloud />}
             style={{ marginBottom: "50px" }}
           >
+            Resume
           </Button>
-        </a>
+          </a>
       </div>
+
+      Adding the Timeline component
+      {/* <Timeline /> */}
     </div>
   );
 };

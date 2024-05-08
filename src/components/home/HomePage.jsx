@@ -1,74 +1,54 @@
-// Import Statements
-
 import React from "react";
 import TypeAnimation from "./TypeAnimation";
 import HomeBottomPage from "./HomeBottomPage";
-import gifGif from "../../assets/giphy.gif"; // Importing Flag.gif
-
-// Component Definition
 
 const HomePage = () => {
   return (
     <div className="home">
       <div className="home-parent">
         <div className="home-content">
-          
-
           <div className="heading-text">
             <h1
               style={{
                 fontFamily: "Fira Code",
-                fontSize: "2.5rem",
+                fontSize: "3rem", // Increased font size
                 position: "static",
               }}
             >
-              Greetings,
+              Greetings, it's
             </h1>
             <h1
               style={{
                 color: "white",
                 fontFamily: "Fira Code",
-                fontSize: "2.5rem",
+                fontSize: "4rem", // Increased font size
                 position: "static",
               }}
             >
-              I'm{" "}
+            {" "}
               <span
                 style={{
                   color: "Gold",
                   fontFamily: "Fira Code",
                   position: "static",
+                  fontSize: "6rem", // Increased font size
                   textDecoration: "",
+                  textShadow: "0 0 10px gold", // Added glow effect
+                  animation: "pulse 2s infinite", // Added animation
                 }}
               >
                 MAK TRNKA
               </span>
             </h1>
           </div>
-          
-
           <div className="text-animation">
             <TypeAnimation />
           </div>
         </div>
-        
-
-        <img
-          className="rounded"
-          src={gifGif} //
-          alt="Avatar"
-          style={{ width: "300px", height: "300px", margin: "300px" }} // Adjusting width, height, and margin inline
-        />
       </div>
-      
-
       <HomeBottomPage />
     </div>
   );
 };
 
-// Export Component
-
 export default HomePage;
-
-
