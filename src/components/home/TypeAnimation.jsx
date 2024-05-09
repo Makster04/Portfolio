@@ -10,18 +10,19 @@ const TypeAnimation = () => {
           "Software Enthusiast",
           "Data Enthusiast",
           "History Buff",
-          "Movie Buff",
+          "Cinephile",
           "News Buff",
           "(Geo)Political Buff",
-          "Society Buff",
+          "Societal Geek",
           "Pop Culture Buff",
           "World Travler",
-          "Social Media",
+          "Photographer",
+          "Balkan"
         ],
         autoStart: true,
         loop: true,
         deleteSpeed: 60,
-        delay: 50, // Adds delay between each character
+        delay: 60, // Adds delay between each character
         pauseFor: 2000, // Pauses for 2 seconds after each string
         cursor: "|", // Custom cursor
         cursorStyle: "|", // Custom cursor style

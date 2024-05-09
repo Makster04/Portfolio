@@ -36,7 +36,6 @@ const Contact = () => {
     <IconContext.Provider value={{ color: "#32CD30", size: "50px" }}>
       <div className="contact">
         
-        // Heading
 
         <h1
           style={{
@@ -49,21 +48,15 @@ const Contact = () => {
           mind??
         </h1>
         
-        // Subheading
-
         <p style={{ textAlign: "center" }}>
           Or just want to discuss a project? Contact Me using any of the links!!
         </p>
         
-        // Contact Links
-
         <div className="contact-box">
           <Box sx={{ width: "100%", maxWidth: 360 }}>
             <nav aria-label="main mailbox folders">
               <List>
                 
-                // Linkedin
-
                 <ListItem disablePadding  className="contact-list-item">
                   <ListItemButton  href="https://www.linkedin.com/in/mak-trnka/" target="_blank">
                     <ListItemIcon>
@@ -73,8 +66,6 @@ const Contact = () => {
                   </ListItemButton>
                 </ListItem>
                 
-                // Github
-
                 <ListItem disablePadding className="contact-list-item">
                   <ListItemButton href="https://github.com/Makster04" target="_blank">
                     <ListItemIcon>
@@ -84,8 +75,6 @@ const Contact = () => {
                   </ListItemButton>
                 </ListItem>
                 
-                // Twitter
-
                 <ListItem disablePadding className="contact-list-item">
                   <ListItemButton href="https://www.instagram.com/mt_b0sniak/" target="_blank">
                     <ListItemIcon>
@@ -95,8 +84,6 @@ const Contact = () => {
                   </ListItemButton>
                 </ListItem>
                 
-                // Email
-
                 <ListItem disablePadding className="contact-list-item">
                   <ListItemButton
                     onClick={() =>

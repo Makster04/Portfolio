@@ -96,7 +96,7 @@ const AboutInfo = () => {
       <br></br>
       <div className="github-graph">
         <GitHubCalendar
-          style={{ marginBottom: "50px" }}
+          style={{ marginBottom: "70px" }}
           username="Makster04"
           blockMargin={6}
           blockSize={12}

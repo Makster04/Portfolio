@@ -8,7 +8,7 @@ import { SiLeetcode } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <footer className="p-4 bg-gold rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 footer">
+<footer className="p-4 bg-blue-900 rounded-lg shadow md:flex md:items-center md:justify-between md:p-8 dark:bg-gray-800 footer">
       
 
 

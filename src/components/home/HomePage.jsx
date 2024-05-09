@@ -28,13 +28,13 @@ const HomePage = () => {
             {" "}
               <span
                 style={{
-                  color: "Gold",
-                  fontFamily: "Fira Code",
+                  color: "#000080",
+                  fontFamily: "monospace",
                   position: "static",
-                  fontSize: "6rem", // Increased font size
+                  fontSize: "7rem", // Increased font size
                   textDecoration: "",
-                  textShadow: "0 0 10px gold", // Added glow effect
-                  animation: "pulse 2s infinite", // Added animation
+                  textShadow: "0 0 10px white", // Added glow effect
+                  animation: "pulse 3s infinite", // Added animation
                 }}
               >
                 MAK TRNKA

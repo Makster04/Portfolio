@@ -4,15 +4,11 @@ export class AppOptions {
     static set(name: any, value: any): void;
     static setAll(options: any): void;
     static remove(name: any): void;
-    /**
-     * @ignore
-     */
-    static _hasUserOptions(): boolean;
 }
 export const compatibilityParams: any;
 export namespace OptionKind {
-    const VIEWER: number;
-    const API: number;
-    const WORKER: number;
-    const PREFERENCE: number;
+    let VIEWER: number;
+    let API: number;
+    let WORKER: number;
+    let PREFERENCE: number;
 }
