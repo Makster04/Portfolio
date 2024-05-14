@@ -5,7 +5,6 @@ import avatar from "../../assets/IdidThat.png";
 import Tilt from "react-parallax-tilt";
 import { FiDownloadCloud } from "react-icons/fi";
 import { Button } from "@mui/material";
-import Timeline from "./Timeline"; // Importing the Timeline component
 
 // Constant Declaration
 
