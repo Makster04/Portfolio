@@ -4,15 +4,16 @@ import HomeBottomPage from "./HomeBottomPage";
 
 const HomePage = () => {
   return (
-    <div className="home">
+    <div className="home" style={{ position: 'relative', zIndex: 2 }}>
       <div className="home-parent">
         <div className="home-content">
           <div className="heading-text">
             <h1
               style={{
                 fontFamily: "Fira Code",
-                fontSize: "3rem", // Increased font size
-                position: "static",
+                fontSize: "3rem", // Corrected typo
+                position: "relative",
+                zIndex: 2, // Ensure text appears in front
               }}
             >
               Greetings, it's
@@ -21,20 +22,21 @@ const HomePage = () => {
               style={{
                 color: "white",
                 fontFamily: "Fira Code",
-                fontSize: "4rem", // Increased font size
-                position: "static",
+                fontSize: "4rem", // Corrected typo
+                position: "relative",
+                zIndex: 2, // Ensure text appears in front
               }}
             >
-            {" "}
               <span
                 style={{
                   color: "#000080",
                   fontFamily: "monospace",
-                  position: "static",
-                  fontSize: "7rem", // Increased font size
+                  position: "relative",
+                  fontSize: "7rem", // Corrected typo
                   textDecoration: "",
-                  textShadow: "0 0 10px white", // Added glow effect
-                  animation: "pulse 3s infinite", // Added animation
+                  textShadow: "0 0 10px white",
+                  animation: "pulse 3s infinite",
+                  zIndex: 2, // Ensure text appears in front
                 }}
               >
                 MAK TRNKA
