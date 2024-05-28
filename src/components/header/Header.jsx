@@ -24,13 +24,17 @@ import { BsGithub } from "react-icons/bs";
 const pages = [
   { text: "Home", href: "/" },
   { text: "About", href: "/about" },
-  { text: "Projects", href: "/projects" },
+  { text: "Software Projects", href: "/project" },
+  { text: "Travel Blog (In the works)", href: "/project" },
+  { text: "Powerpoints (not added yet)", href: "/project" },
   { text: "Contact", href: "/contact" },
   { text: "Fork Project", href: "https://github.com/Makster04/Mak-portfolio" },
 ];
 const pageIcons = [
   HomeRoundedIcon,
   FaceRoundedIcon,
+  FolderSharedRoundedIcon,
+  FolderSharedRoundedIcon,
   FolderSharedRoundedIcon,
   CallRoundedIcon,
   BsGithub,

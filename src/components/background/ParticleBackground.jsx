@@ -15,7 +15,7 @@ const ParticlesComponent = () => {
       options={{
         background: {
           color: {
-            value: "black",
+            value: "#808080", // Gray color
           },
           image: "linear-gradient(135deg, grey 0%, black 100%)",
           position: "absolute",
@@ -31,39 +31,36 @@ const ParticlesComponent = () => {
             },
             onHover: {
               enable: true,
-              mode: "repulse",
-            },
-            onDiv: {
-              selectors: "#tsparticles",
-              enable: true,
-              mode: "bounce",
-              type: "rectangle",
+              mode: ["bubble", "repulse"], // Added 'repulse' mode for hover
             },
             resize: true,
           },
           modes: {
             push: {
-              quantity: 1,
+              quantity: 5, // Increased quantity for more particles
+            },
+            bubble: {
+              distance: 150,
+              duration: 2,
+              size: 10,
+              opacity: 0.8,
             },
             repulse: {
-              distance: 100,
+              distance: 100, // Distance for repulse effect on hover
               duration: 0.4,
-            },
-            bounce: {
-              distance: 200,
             },
           },
         },
         particles: {
           color: {
-            value: ["#ffffff", "#ff4081", "#3f51b5", "#00e676"],
+            value: ["#ffffff", "#ff4081", "#3f51b5", "#00e676", "#ff9800", "#9c27b0"],
           },
           links: {
-            color: "#ffffff",
-            distance: 150,
+            color: "#000000", // Changed the color of the links to black
+            distance: 150, // Increased distance for links
             enable: true,
-            opacity: 0.5,
-            width: 2, // Increase line width
+            opacity: 0.5, // Reduced opacity for better visual appeal
+            width: 1,
           },
           collisions: {
             enable: true,
@@ -72,28 +69,36 @@ const ParticlesComponent = () => {
             direction: "none",
             enable: true,
             outModes: {
-              default: "bounce",
+              default: "out", // Changed to 'out' for smoother exit
             },
-            random: false,
-            speed: 1, // Constant speed
+            random: true, // Enabled random movement
+            speed: 2, // Increased speed for more dynamic motion
             straight: false,
           },
           number: {
             density: {
               enable: true,
-              area: 900,
+              area: 800, // Adjusted for better performance
             },
-            value: 130,
+            value: 100, // Reduced number of particles for performance
           },
           opacity: {
-            value: 0.8,
+            value: { min: 0.3, max: 0.7 }, // Variable opacity for a subtle effect
           },
           shape: {
-            type: ["circle", "triangle"],
+            type: ["circle", "triangle", "polygon", "hexegon"], // Added more shapes
+            options: {
+              star: {
+                sides: 5,
+              },
+              polygon: {
+                sides: 6,
+              },
+            },
           },
           size: {
-            random: true,
-            value: 10,
+            random: { enable: true, minimumValue: 5 },
+            value: { min: 5, max: 15 }, // Variable size for more dynamic visuals
           },
         },
         detectRetina: true,

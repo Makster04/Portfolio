@@ -21,9 +21,9 @@ const Project = () => {
           color: "white"
         }}
       >
-        My Recent <span style={{ color: "yellow" }}>PROJECTS</span>
+       <span style={{position: 'relative', zIndex: 2}}>My Recent</span> <span style={{color: "yellow", position: 'relative', zIndex: 2}}>PROJECTS</span>
       </h1>
-      <p>These are Group Projects I worked on in my Software Bootcamp, Code Fellows, both as a Backend and Frontend Engineer (NOTE: Deployments are still in the works for a few)</p>
+      <p><span style={{ position: 'relative', zIndex: 2 }}>These are Group Projects I worked on in my Software Bootcamp, Code Fellows, both as a Backend and Frontend Engineer (NOTE: Deployments are still in the works for a few)</span></p>
       <div className="project-cards">
         <Card.Group itemsPerRow={width > 786 ? 3 : 1}>
           {projectData.map((data, index) => {

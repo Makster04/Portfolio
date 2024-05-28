@@ -17,7 +17,7 @@ const TypeAnimation = () => {
           "Pop Culture Buff",
           "World Travler",
           "Photographer",
-          "Balkan"
+          "Balkanite"
         ],
         autoStart: true,
         loop: true,

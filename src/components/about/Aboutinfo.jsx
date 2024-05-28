@@ -1,7 +1,7 @@
 import React from "react";
 import TechStack from "./TechStack";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
-import codeImage from "../../assets/coder.svg";
+import codeImage from "../../assets/bosnianparrot.gif";
 import GitHubCalendar from "react-github-calendar";
 
 const AboutInfo = () => {
@@ -23,34 +23,59 @@ const AboutInfo = () => {
           <div className="about-text">
             <p style={{ textAlign: "justify" }}>
               Hello Fellow Comrades, I am{" "}
-              <span style={{ color: "green", fontWeight: "bold" }}>
+              <span style={{ color: "yellow", fontWeight: "bold" }}>
                 Mak Trnka
               </span>{" "}
-              I live in the United States and am a Bosnian Descendent, Second Generation. I went to college at{" "}
-              <span style={{ color: "pink", fontWeight: "bold" }}>
-                UNIVERSITY OF WASHINGTON, 2019-2022
-              </span>{" "}
-              and currently I'm learning Software Engineering at{" "}
+              I live in the United States and am a Bosnian Descendent, Second Generation. I went to two colleges{" "}
+              and currently I'm learning Software Engineering at a Bootcamp named{" "}
               <span style={{ color: "RED", fontWeight: "bold" }}>
                 CODE FELLOWS
               </span>
               .
             </p>
             <br />
-            <p style={{ textAlign: "justify" }}>
-              Apart from development, some things I like are<br /><br />
+            <p style={{ textAlign: "justify"}}>
+              Apart from my current life, here are some of the facts about me:<br /><br />
               <ul>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  Creating
+                  <span style={{ color: "Blue" }}>DATE & PLACE OF BIRTH:</span> April 12, 1998 (Richmond, VA, USA)
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  Traveling
+                  <span style={{ color: "Yellow" }}>FAMILY PLACE OF BIRTH:</span> Bosnia & Herzegovina
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  Talking
+                  <span style={{ color: "Blue" }}>ASTROLOGICAL SIGN:</span> Aries
+                </li>
+                <li>
+                  <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                  <span style={{ color: "Yellow" }}>HOME:</span> Seattle, WA, USA
+                </li>
+                <li>
+                  <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                  <span style={{ color: "Blue" }}>EDUCATION:</span> Bellevue College (2016-19), University of Washington (2019-22)
+                </li>
+                <li>
+                  <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                  <span style={{ color: "Yellow" }}>DEGREE:</span> Associates (Sociology), Bachelors (Poli Sci & International Studies)
+                </li>
+                <li>
+                  <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                  <span style={{ color: "Blue" }}>LANGUAGES:</span> English, Bosnian/Serban/Croatian/Montenegrian
+                </li>
+                <li>
+                  <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                  <span style={{ color: "Yellow" }}>HOBBIES:</span> Talking (Movies, Pop Culture, Basketball, (GEO)Politics, Movies, World Cultures, Hisory, Personal Life, Society, Food, News, etc.), Gym, Hooping, Traveling, Photography, Playing Videogames, Watching Movies, Creating Data Sets & Powerpoints, Comparing & Contrasting, Helping.
+                </li>
+                <li>
+                  <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                  <span style={{ color: "Blue" }}>DREAMS:</span> Start a Podcast, Create a Business (I already have a Tech Business Plan layed out), Start a Youtube Channel.
+                </li>
+                <li>
+                  <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                  <span style={{ color: "Yellow" }}>POSITIVE TRAITS:</span> Goofy, Outgoing, Sympathetic, Caring, Energetic, Curious, Open-Minded, Creative, Unintentionally Funny, Dramatic, Generous, Hospitable.
                 </li>
               </ul>
             </p>
@@ -59,11 +84,13 @@ const AboutInfo = () => {
             className="rounded about-image"
             src={codeImage}
             alt="Extra large avatar"
+            style={{ width: "700px", marginBottom: "50px"}} // Set width of the image
           />
         </div>
         
-        <TechStack />
-        
+        <div style={{ marginTop: '7rem', padding: '5rem', borderRadius: '10px' }}>
+          <TechStack />
+        </div>        
         <h1
           style={{
             marginTop: "3rem",
@@ -76,7 +103,7 @@ const AboutInfo = () => {
         <br />
         <div className="github-graph">
           <GitHubCalendar
-            style={{ marginBottom: "70px" }}
+            style={{ marginBottom: "90px" }}
             username="Makster04"
             blockMargin={6}
             blockSize={12}
