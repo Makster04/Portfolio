@@ -1,28 +1,27 @@
-import React from "react";
-import { Button, Card, Image} from "semantic-ui-react";
-import { BsGithub } from "react-icons/bs";
+// src/components/Travel/SingleTravelCard.jsx
+import React from 'react';
+import './Travel.css';
 
-const SingleTravelCard = ({ projectDetails }) => {
-  const { title, description, image, projectLink } = projectDetails;
+const SingleTravelCard = ({ spot }) => {
+    if (!spot) {
+        return null;
+    }
 
-  return (
-    <Card className="single-card">
-      <Image className="projectCard-image" src={image} wrapped ui={false} />
-      <Card.Content className="single-card-content">
-        <Card.Header style={{fontSize:"2rem"}}>{title}</Card.Header>
-        <Card.Description>{description}</Card.Description>
-      </Card.Content>
-      <Card.Content extra>
-        <a href={projectLink}>
-          <Button className="single-card-button">
-            <div className="github-button">
-              <BsGithub style={{marginRight:"1rem"}}/> Github Link
+    const { name, image, place, description } = spot;
+
+    return (
+        
+        <div className="single-travel-card">
+            <img src={image} alt={name} />
+            <div className="travel-card-content">
+                <h2>{name}</h2>
+                <p><strong>Places:</strong> {place}</p>
+                <p><strong>Description:</strong> {description}</p>
             </div>
-          </Button>
-        </a>
-      </Card.Content>
-    </Card>
-  );
+        </div>
+    );
 };
 
 export default SingleTravelCard;
+
+

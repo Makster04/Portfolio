@@ -24,14 +24,7 @@ const AboutInfo = () => {
             <p style={{ textAlign: "justify" }}>
               Hello Fellow Comrades, I am{" "}
               <span style={{ color: "yellow", fontWeight: "bold" }}>
-                Mak Trnka
-              </span>{" "}
-              I live in the United States and am a Bosnian Descendent, Second Generation. I went to two colleges{" "}
-              and currently I'm learning Software Engineering at a Bootcamp named{" "}
-              <span style={{ color: "RED", fontWeight: "bold" }}>
-                CODE FELLOWS
-              </span>
-              .
+                Mak Trnka</span>. As a Bosnian-American... if I can survive RAKIJA & CEVAPI, then I can survive CODING & PROGRAMMING.
             </p>
             <br />
             <p style={{ textAlign: "justify"}}>
@@ -39,43 +32,43 @@ const AboutInfo = () => {
               <ul>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Blue" }}>DATE & PLACE OF BIRTH:</span> April 12, 1998 (Richmond, VA, USA)
+                  <span style={{ color: "BLacK", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>DATE & PLACE OF BIRTH:</span> April 12, 1998 (Richmond, VA, USA)
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Yellow" }}>FAMILY PLACE OF BIRTH:</span> Bosnia & Herzegovina
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>FAMILY PLACE OF BIRTH:</span> Bosnia & Herzegovina
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Blue" }}>ASTROLOGICAL SIGN:</span> Aries
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>ASTROLOGICAL SIGN:</span> Aries
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Yellow" }}>HOME:</span> Seattle, WA, USA
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>HOME:</span> Seattle, WA, USA
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Blue" }}>EDUCATION:</span> Bellevue College (2016-19), University of Washington (2019-22)
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>EDUCATION:</span> Bellevue College (2016-19), University of Washington (2019-22)
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Yellow" }}>DEGREE:</span> Associates (Sociology), Bachelors (Poli Sci & International Studies)
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>DEGREE:</span> Associates (Sociology), Bachelors (Poli Sci & International Studies)
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Blue" }}>LANGUAGES:</span> English, Bosnian/Serban/Croatian/Montenegrian
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>LANGUAGES:</span> English, Bosnian/Serban/Croatian/Montenegrian
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Yellow" }}>HOBBIES:</span> Talking (Movies, Pop Culture, Basketball, (GEO)Politics, Movies, World Cultures, Hisory, Personal Life, Society, Food, News, etc.), Gym, Hooping, Traveling, Photography, Playing Videogames, Watching Movies, Creating Data Sets & Powerpoints, Comparing & Contrasting, Helping.
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>HOBBIES:</span> Talking (Movies, Pop Culture, Basketball, (GEO)Politics, Movies, World Cultures, Hisory, Personal Life, Society, Food, News, etc.), Gym, Hooping, Traveling, Photography, Playing Videogames, Watching Movies, Creating Data Sets & Powerpoints, Comparing & Contrasting, Helping.
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Blue" }}>DREAMS:</span> Start a Podcast, Create a Business (I already have a Tech Business Plan layed out), Start a Youtube Channel.
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>DREAMS:</span> Start a Podcast, Create a Business (I already have a Tech Business Plan layed out), Start a Youtube Channel.
                 </li>
                 <li>
                   <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                  <span style={{ color: "Yellow" }}>POSITIVE TRAITS:</span> Goofy, Outgoing, Sympathetic, Caring, Energetic, Curious, Open-Minded, Creative, Unintentionally Funny, Dramatic, Generous, Hospitable.
+                  <span style={{ color: "Black", boxShadow: "0 4px 8px rgba(0, 0, 0, 0.5)"}}>POSITIVE TRAITS:</span> Goofy, Outgoing, Sympathetic, Caring, Energetic, Curious, Open-Minded, Creative, Unintentionally Funny, Dramatic, Generous, Hospitable.
                 </li>
               </ul>
             </p>

@@ -1,42 +1,21 @@
-import React, { useEffect, useState } from "react";
-import SingleTravelCard from "./SingleTravelCard";
-import projectData from "./TravelData";
-import { Card } from "semantic-ui-react";
-const Project = () => {
-  const [width,setWidth] = useState(1200);
+// src/components/Travel/Travel.jsx
+import React from 'react';
+import SingleTravelCard from './SingleTravelCard';
+import travelData from './TravelData';
+import './Travel.css';
 
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  },[width]);
-
-
-  
-  return (
-    <div className="projects">
-      <h1
-        style={{
-          marginTop: "3rem",
-          fontFamily: "Fira Code",
-          fontWeight: "bold",
-          color: "white"
-        }}
-      >
-        My Recent <span style={{ color: "yellow" }}>PROJECTS</span>
-      </h1>
-      <p>These are Group Projects I worked on in my Software Bootcamp, Code Fellows, both as a Backend and Frontend Engineer (NOTE: Deployments are still in the works for a few)</p>
-      <div className="project-cards">
-        <Card.Group itemsPerRow={width > 786 ? 3 : 1}>
-          {projectData.map((data, index) => {
-            return <SingleTravelCard
-              className="card"
-              key={index}
-              projectDetails={data}
-            />;
-          })}
-        </Card.Group>
-      </div>
-    </div>
-  );
+const Travel = () => {
+    return (
+        <div className="app">
+            <h1>My Travel Spots</h1>
+            <div className="travel-cards-container">
+                {travelData.map((spot, index) => (
+                    <SingleTravelCard key={index} spot={spot} />
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default Travel;
+

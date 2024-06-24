@@ -35,7 +35,7 @@ const HomePage = () => {
                   fontSize: "7rem", // Corrected typo
                   textDecoration: "",
                   textShadow: "0 0 10px white",
-                  animation: "pulse 3s infinite",
+                  animation: "pulse 2s infinite",
                   zIndex: 2, // Ensure text appears in front
                 }}
               >
