@@ -10,15 +10,16 @@ const GlobeComponent = () => {
 
     if (globe) {
       globe.controls().autoRotate = true;
-      globe.controls().autoRotateSpeed = 0.5; // Adjust the speed of rotation
+      globe.controls().autoRotateSpeed = 1; // Adjust the speed of rotation
     }
   }, []);
 
   const pinsData = markers.map((marker) => ({
     lat: marker.lat,
     lng: marker.long,
-    size: 10,
-    texture: "https://img.icons8.com/color/48/000000/map-pin.png", // Replace with your new pin image URL
+    size: 0.2,
+    color: "red",
+    name: marker.name // Include the name field
   }));
 
   return (
@@ -33,11 +34,11 @@ const GlobeComponent = () => {
         pointsData={pinsData}
         pointAltitude="size"
         pointRadius={0.2} // Adjust the radius of the points if needed
-        pointTexture={(datum) => datum.texture} // Use custom texture for each pin
+        pointColor={() => "red"} // Set the color of the points
+        pointLabel={({ name }) => name} // Use the name field for labels
       />
     </div>
   );
 };
 
 export default GlobeComponent;
-
