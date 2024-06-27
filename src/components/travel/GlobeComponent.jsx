@@ -1,41 +1,71 @@
-import React, { useEffect, useRef } from "react";
-import Globe from "react-globe.gl";
-import markers from "./markers"; // Adjust the import path accordingly
+import React, { useState, useEffect, useMemo, useRef } from 'react';
+import Globe from 'react-globe.gl';
+import * as d3 from 'd3';
+import pinpoints from './pinpoints'; // Import the pinpoints data
 
 const GlobeComponent = () => {
-  const globeEl = useRef(null);
+  const [countries, setCountries] = useState({ features: [] });
+  const [hoverD, setHoverD] = useState();
+  const globeRef = useRef(null);
+  const rotationSpeed = 0.3; // Adjust the speed of rotation here
 
   useEffect(() => {
-    const globe = globeEl.current;
-
-    if (globe) {
-      globe.controls().autoRotate = true;
-      globe.controls().autoRotateSpeed = 1; // Adjust the speed of rotation
-    }
+    // Load data
+    fetch('/datasets/ne_110m_admin_0_countries.geojson')
+      .then(res => res.json())
+      .then(setCountries);
   }, []);
 
-  const pinsData = markers.map((marker) => ({
-    lat: marker.lat,
-    lng: marker.long,
-    size: 0.2,
-    color: "red",
-    name: marker.name // Include the name field
-  }));
+  const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
+
+  // GDP per capita (avoiding countries with small pop)
+  const getVal = feat => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
+
+  const maxVal = useMemo(() => Math.max(...countries.features.map(getVal)), [countries]);
+  colorScale.domain([0, maxVal]);
+
+  useEffect(() => {
+    let animationFrameId = null;
+    const animate = () => {
+      if (globeRef.current) {
+        globeRef.current.controls().autoRotate = true; // Enable auto-rotation
+        globeRef.current.controls().autoRotateSpeed = rotationSpeed;
+        globeRef.current.controls().update();
+      }
+      animationFrameId = requestAnimationFrame(animate);
+    };
+    animate();
+
+    return () => {
+      cancelAnimationFrame(animationFrameId);
+    };
+  }, [rotationSpeed]);
 
   return (
-    <div style={{ height: "100vh", width: "100%", position: "relative" }}>
+    <div style={{ height: '100vh', width: '100%', position: 'relative' }}>
       <Globe
-        ref={globeEl}
-        width={window.innerWidth}
-        height={window.innerHeight}
-        globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
-        bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-        backgroundColor="rgba(0, 0, 0, 0)" // Set the background color to transparent
-        pointsData={pinsData}
-        pointAltitude="size"
-        pointRadius={0.2} // Adjust the radius of the points if needed
-        pointColor={() => "red"} // Set the color of the points
-        pointLabel={({ name }) => name} // Use the name field for labels
+        ref={globeRef}
+        globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
+        backgroundColor="rgba(0,0,0,0)" // Set background to transparent
+        lineHoverPrecision={0}
+        polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
+        
+        polygonCapColor={d => (d === hoverD ? 'steelblue' : colorScale(getVal(d)))}
+        polygonSideColor={() => 'rgba(0, 100, 0, 0.15)'}
+        polygonStrokeColor={() => '#111'}
+        polygonLabel={({ properties: d }) => `
+          <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
+  
+        `}
+        onPolygonHover={setHoverD}
+        polygonsTransitionDuration={300}
+        pointsData={pinpoints}
+        pointAltitude={d => d.size * 0.2} // Adjust altitude based on size
+        pointColor={d => d.color} // Use color property from pinpoints
+        pointLabel={d => d.label} // Use label property from pinpoints
+        pointRadius={0.3} // Increase the size of the pinpoints
+        pointResolution={30} // Increase roundness of the pinpoints
+        pointGlowColor="black" // Example of glow color
       />
     </div>
   );

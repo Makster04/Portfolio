@@ -37,9 +37,8 @@ const Travel = () => {
         </h1>
         <p>
           <span style={{ position: "relative", zIndex: 2 }}>
-            These are Photos of my recent trips I took that I collected
-            pictures.
-          </span>
+            A page showing all the nations and places I went on the globe, along with an album of pics from certain spots I began photography in! 
+            </span>
         </p>
       </div>
       
